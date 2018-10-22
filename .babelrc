@@ -1,0 +1,27 @@
+{
+  "presets": [
+    "env",
+    "es2015",
+    "es2016",
+    "es2017"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "services": "./server/services",
+          "middlewares": "./server/middlewares",
+          "routes": "./server/routes",
+          "models": "./server/models",
+          "lib": "./server/lib"
+        }
+      }
+    ],
+    "transform-class-properties",
+    "transform-object-rest-spread"
+  ]
+}
